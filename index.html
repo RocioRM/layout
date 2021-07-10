@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+  
+  <div class="container">
+  <!-- FILA 1: NAVBAR -->
+    <div class="row"> 
+      <div class="border border-4 col">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">IA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">INFORMACIÓN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NOTICIAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SOPORTE</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+      
+    <!-- FILA 2: SLIDER CAROUSEL -->
+    <div class="row">
+      <div class="border border-4 col">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="http://codideep.com/img/blogpost/imagenportada/202001310000003.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>REDES NEURONALES</h5>
+                <p>Las redes neuronales artificiales (RNA) son modelos de la inteligencia artificial que se inspiran en el comportamiento de las neuronas y las conexiones cerebrales para resolver problemas. ... Los sistemas de IA utilizan algoritmos y modelos para analizar, organizar, procesar y convertir datos.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://i2.wp.com/otropaisnoticias.com/wp-content/uploads/2021/02/TheNewNow_videos-deep-fake-iStock-872707982-1200x600-1.jpg?fit=1200%2C600&ssl=1" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>DEEP FAKES</h5>
+                <p>En términos simples, el término se refiere a videos manipulados u otras representaciones digitales producidas por inteligencia artificial sofisticada, produciendo imágenes y sonidos que parecen ser reales.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://circulotne.com/wp-content/uploads/2020/11/20201124-veh%C2%A1culos-aut%C2%A6nomos-revista-tne-banner.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>VEHÍCULOS AUTÓNOMOS</h5>
+                <p>Un coche autónomo es aquel que cuenta con los sistemas informáticos necesarios para imitar las capacidades humanas en cuanto a la conducción, tanto por manejo como por control. ... Los coches autónomos son capaces de percibir el entorno que lo rodea y, en base al análisis del mismo, aplicar técnicas de conducción.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILA 3: SECTION Y ASIDE -->
+    <!-- COLUMNA 1: SECTION -->
+    <div class="row">
+      <div class="border border-4 col-12 col-lg-8">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Qué es la inteligencia artificial?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>La Inteligencia Artificial (IA)</strong> es la combinación de algoritmos planteados con el propósito de crear máquinas que presenten las mismas capacidades que el ser humano. Una tecnología que todavía nos resulta lejana y misteriosa, pero que desde hace unos años está presente en nuestro día a día a todas horas. <br>El informático John McCarthy acuña por primera vez el término Inteligencia Artificial durante la conferencia de Darmouth de 1956, considerada el germen de la disciplina.</br>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Novedades de la IA
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <br><strong>Biomedicina</strong> Estudios recientes han demostrado la utilidad de aplicar inteligencia artificial para el diagnóstico de enfermedades como el cáncer, las enfermedades cardiovasculares y las retinopatías. En estos casos, los algoritmos han aportado resultados tan buenos o incluso mejores que los estándares establecidos por expertos.</br>
+                <br><strong>Diseño gráfico</strong> Si hablamos de la industria del diseño gráfico, sabremos que también tiene dos perspectivas extremas, pero opuestas, sobre el tema. Para algunos, la IA es el futuro de la industria del diseño gráfico que permitirá a los diseñadores humanos diseñar con mejores instalaciones. Mientras que para otros, la IA es una amenaza para los diseñadores y va a reemplazar a los diseñadores humanos. Se anticipa que los conceptos de Realidad virtual (VR), Realidad mixta (MR), Realidad aumentada (AR) y Aprendizaje automático, desempeñarán un papel importante en el desarrollo de la inteligencia artificial para reemplazar a los diseñadores humanos.</br>
+                <br><strong>GitHub Copilot</strong> GitHub (uno de los principales repositorios de código en el mundo) lanzó GitHub Copilot, una herramienta de inteligencia artificial (IA) que será capaz de recomendar porciones de código a partir de instrucciones en «idioma humano» o escribiendo el comienzo de una cabecera en distintos lenguajes de programación.</br>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Futuro de la IA
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <br><strong>Detección temprana de enfermedades</strong> La IA tiene innumerables campos donde desarrollarse en el terreno de la salud y son también conocidos los avances que se están realizando en el análisis de imágenes para detectar el avance de una enfermedad o incluso adelantarse a ella.</br>
+                <br><strong>Futuro de los programadores</strong> A día de hoy, los programadores informáticos son profesionales muy buscados en el mercado, pero la inteligencia artificial va producir cambios inevitables en este sector. Esto no supone un final para los programadores, sino una reorientación de sus habilidades, ya que cambiará el perfil de desarrollador que se busque en función de las nuevas tareas.Los expertos de los sectores especializados aseguran que los programadores de software van a tener que prepararse y especializarse a conciencia para ejercer su profesión en entornos de automatización, donde la inteligencia artificial es clave y va a marcar el ritmo.</br>
+                <br><strong>Problemas que se presentaran</strong> La recogida de información es el principal dolor de cabeza de quienes tienen que entrenar a una inteligencia artificial. Si queremos que funcione de manera eficaz el machine learning se necesita un conjunto de datos tan grande, que es el principal obstáculo para lograr resultados más precisos. Y no solo eso, sino que después debe haber una clasificación y un humano tiene que aplicar un algoritmo que debe ser lo más objetivo posible para que no entre en juego un problema ético o un sesgo racial.</br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- COLUMNA 2: ASIDE -->
+    <div class="border border-4 col-12 col-lg-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://pbs.twimg.com/media/EoAEOlQUYAIGiO9.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/originals/bf/bd/c3/bfbdc3594a00c17d40043cf2b93e7a93.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- FILA 4: FOOTER -->
+    <div class="row">
+      <div class="border border-4 col">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary">4</button>
+          </div>
+          <div class="btn-group me-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">7</button>
+          </div>
+          <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-info">8</button>
+            <button type="button" class="btn btn-info">9</button>
+            <button type="button" class="btn btn-info">10</button>
+            <button type="button" class="btn btn-info">11</button>
+            <button type="button" class="btn btn-info">12</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+          
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
